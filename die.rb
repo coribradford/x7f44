@@ -16,14 +16,6 @@ class Die
 
   def makeRoll
         roll!
-    end
-
-#
-#
-  # def to_s
-  #   value
-  # end
-#
-# end
+  end
 
 end
