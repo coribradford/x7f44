@@ -13,7 +13,7 @@ class Die
   end
 
   def makeRoll
-        roll!
+    roll!
   end
 
 end
