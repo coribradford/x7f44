@@ -12,8 +12,4 @@ class Die
     self.value = rand(1..number_of_sides)
   end
 
-  def makeRoll
-    roll!
-  end
-
 end
