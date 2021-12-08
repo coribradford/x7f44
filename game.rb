@@ -11,7 +11,7 @@ class Game
   end
 
   def over?
-    box.shut? || box.can_flip_for?(dice.map(&:value).reduce(:+))
+    box.is_shut? || box.can_flip_dice_roll?(dice.map(&:value).reduce(:+))
   end
 
   def start!
@@ -23,7 +23,7 @@ class Game
   end
 
   def play
-    box.get_tiles()
+    box.print_tiles()
     print "You rolled: "
     dice.each do |die|
       print "#{die.value} "
@@ -35,7 +35,7 @@ class Game
   end
 
   def results
-    box.shut? ? W_M : "Game over, you did not shut da box."
+    box.is_shut? ? W_M : "Game over, you did not shut da box."
   end
 
 end

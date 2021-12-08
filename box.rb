@@ -11,15 +11,15 @@ class Box
     @shut_tiles = []
   end
 
-  def shut?
+  def is_shut?
     @tiles.empty? && @shut_tiles.length == @number_of_tiles
   end
 
-  def can_flip_for?(value)
+  def can_flip_dice_roll?(value)
     false
   end
 
-  def get_tiles
+  def print_tiles
     print '| '
     @tiles.each do |tile|
       print tile.to_s + ' | '
