@@ -19,12 +19,8 @@ class Box
     false
   end
 
-  def getTiles
+  def get_tiles
     @tiles
-  end
-
-  def to_s
-    "Box"
   end
 
 end
