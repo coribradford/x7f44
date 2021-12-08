@@ -20,7 +20,11 @@ class Box
   end
 
   def get_tiles
-    @tiles
+    print '| '
+    @tiles.each do |tile|
+      print tile.to_s + ' | '
+    end
+    print "\n"
   end
 
 end
